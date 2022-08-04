@@ -41,11 +41,11 @@ project "glfw"
 
 		files
 		{
-			"win32_time.h",
-			"win32_thread.h",
-			"win32_module.c",
-			"win32_time.c",
-			"win32_thread.c",
+			"src/win32_time.h",
+			"src/win32_thread.h",
+			"src/win32_module.c",
+			"src/win32_time.c",
+			"src/win32_thread.c",
 
 			"src/win32_platform.h",
 			"src/win32_joystick.h",
@@ -58,6 +58,7 @@ project "glfw"
 
 		defines
 		{
+			"_CRT_SECURE_NO_WARNINGS",
 			"_GLFW_WIN32",
 		}
 
