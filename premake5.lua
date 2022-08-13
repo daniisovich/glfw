@@ -2,6 +2,7 @@ project "glfw"
 
 	kind "StaticLib"
 	staticruntime "off"
+
 	language "C"
 
 	targetdir (bindir .. "/%{prj.name}")
@@ -36,7 +37,6 @@ project "glfw"
 
 
 	filter "system:windows"
-
 		systemversion "latest"
 
 		files
@@ -63,7 +63,6 @@ project "glfw"
 		}
 
 	filter "system:linux"
-
 		systemversion "latest"
 
 		files 
@@ -91,11 +90,9 @@ project "glfw"
 
 
 	filter "configurations:Debug"
-
 		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
-
 		runtime "Release"
 		optimize "on"
