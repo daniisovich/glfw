@@ -1,7 +1,7 @@
 project "glfw"
 
 	kind "StaticLib"
-	staticruntime "off"
+	staticruntime "on"
 
 	language "C"
 
